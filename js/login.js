@@ -12,11 +12,12 @@ document.getElementById('btn-submit').addEventListener('click', function () {
     // step 4: check & verify email and password 
     // DANGER: do not verify email and password on the client side 
     // we will learn this on backend. now just performing here to understand.
-    if(email === "rahat@developer.com" && password==="money")
+    if(email === "rahat@developer.com" && password==="coder")
     {
-        console.log("valid user");
+        // go to the next page: account inside(bank.html)
+        window.location.href='bank.html';
     }
     else{
-        console.log("invalid user");
+        alert("Wrong password or Email!!! Please enter correct information.");
     }
 });
