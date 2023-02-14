@@ -17,7 +17,7 @@ document.getElementById('btn-deposit').addEventListener('click', function () {
     // step 5: update deposit total field'sinnerText
     depositTotalField.innerText = currentDepositTotal;
 
-    // step 6: update the current balance 
+    // step 6: get the current balance 
     const balanceTotalField = document.getElementById('balance-total');
     // step 7 : get previous balance
     const previousBalanceTotal = parseFloat(balanceTotalField.innerText);
@@ -26,7 +26,7 @@ document.getElementById('btn-deposit').addEventListener('click', function () {
     // step 9: set innerText of the balanceTotalField
     balanceTotalField.innerText = currentBalanceTotal;
 
-    // step last : clear the deposit field after deposit is done
+    // step 10 : clear the deposit field after deposit is done
     depositField.value = '';
 
 });
